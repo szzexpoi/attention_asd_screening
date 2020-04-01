@@ -1,4 +1,4 @@
-# Attention-based Autism Spectrum Disorder Screening with Privileged Modality
+# Attention-based Autism Spectrum Disorder Screening
 This code implements the image-viewing based ASD screening model proposed in the paper "Attention-based Autism Spectrum Disorder Screening with Privileged Modality". It is used to reproduce the results on the [Saliency4ASD](https://saliency4asd.ls2n.fr/datasets/) dataset. The high-level architecture of the proposed model is visualized below:
 
 ![teaser](asset/model.png?raw=true)
