@@ -28,4 +28,4 @@ Running the experiments with our code is straightforward, as the default paramet
 ```
 python main.py --checkpoint_path $CHECKPOINT_DIR
 ```
-The tensorboard visualization provides the prediction accuracy (predicted confidence on the correct labels) on different hold-out subjects during the leave-one-subject-out evaluation.
+The tensorboard visualization (stored in `$CHECKPOINT_DIR`) provides the prediction accuracy (predicted confidence on the correct labels) on different hold-out subjects during the leave-one-subject-out evaluation.
