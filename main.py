@@ -93,7 +93,7 @@ def main():
 
                 if j%25 == 0:
                     with tf_summary_writer.as_default():
-                        tf.summary.scalar('training loss',avg_loss,step=iteration)
+                        tf.summary.scalar('training loss_fold_'+str(fold+1),avg_loss,step=iteration)
                 iteration += 1
 
             return iteration

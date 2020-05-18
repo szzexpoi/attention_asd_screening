@@ -170,8 +170,8 @@ class Dataset(data.Dataset):
         for i in range(self.max_len):
             if i+1 <= len(fixs):
                 y_fix, x_fix = fixs[i]
-                x_fix = int(x_fix*(self.img_width/float(x_lim)))/32
-                y_fix = int(y_fix*(self.img_height/float(y_lim)))/33
+                x_fix = int(x_fix*(self.img_width/float(x_lim))/32)
+                y_fix = int(y_fix*(self.img_height/float(y_lim))/33)
                 if x_fix >=0 and y_fix>=0:
                     fixation.append(y_fix*25 + x_fix) # get the corresponding index of fixation on the downsampled feature map
                 else:
