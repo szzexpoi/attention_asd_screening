@@ -68,7 +68,6 @@ def main():
         valloader = torch.utils.data.DataLoader(val_set, batch_size=args.batch_size, shuffle=False, num_workers=2)
 
         model = Sal_seq(backend=args.backend,seq_len=args.max_len,hidden_size=args.hidden_size)
-        model = nn.DataParallel(model) # adding multiple GPU support
         model = model.cuda()
 
         optimizer = optim.Adam(filter(lambda p: p.requires_grad, model.parameters()), lr=args.lr, weight_decay=1e-5) # 5e-4
